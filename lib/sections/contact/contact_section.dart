@@ -23,7 +23,7 @@ class ContactSection extends StatelessWidget {
         children: [
           SizedBox(height: kDefaultPadding * 2.5),
           SectionTitle(
-            title: "Contact Me",
+            title: "Contact US",
             subTitle: "For Project inquiry and information",
             color: Color(0xFF07E24A),
           ),
@@ -43,7 +43,7 @@ class ContactBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       constraints: BoxConstraints(maxWidth: 1110),
-      margin: EdgeInsets.only(top: kDefaultPadding * 2),
+      margin: EdgeInsets.only(top: kDefaultPadding * 1.5),
       padding: EdgeInsets.all(kDefaultPadding * 3),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -60,19 +60,19 @@ class ContactBox extends StatelessWidget {
               SocalCard(
                 color: Color(0xFFD9FFFC),
                 iconSrc: "assets/images/skype.png",
-                name: 'TheFlutterWay',
+                name: 'TheEcampus',
                 press: () {},
               ),
               SocalCard(
                 color: Color(0xFFE4FFC7),
                 iconSrc: "assets/images/whatsapp.png",
-                name: 'TheFlutterWay',
+                name: 'TheEcampus',
                 press: () {},
               ),
               SocalCard(
                 color: Color(0xFFE8F0F9),
                 iconSrc: "assets/images/messanger.png",
-                name: 'TheFlutterWay',
+                name: 'TheEcampus',
                 press: () {},
               ),
             ],
@@ -148,12 +148,11 @@ class ContactForm extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: kDefaultPadding * 2),
           Center(
             child: FittedBox(
               child: DefaultButton(
                 imageSrc: "assets/images/contact_icon.png",
-                text: "Contact Me!",
+                text: "Contact Us!",
                 press: () {},
               ),
             ),

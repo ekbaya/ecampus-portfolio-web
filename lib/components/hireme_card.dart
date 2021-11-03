@@ -49,7 +49,7 @@ class HireMeCard extends StatelessWidget {
             ),
           ),
           DefaultButton(
-            text: "Hire Me!",
+            text: "Hire Us!",
             imageSrc: "assets/images/hand.png",
             press: () {},
           )

@@ -15,7 +15,15 @@ class LogoAndBlurBox extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.asset("assets/images/Logo.png"),
+        Text(
+            "ECampus",
+            style: TextStyle(
+              fontSize: 80,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              height: 1.5,
+            ),
+          ),
         Spacer(),
         GlassContent(size: size),
         Spacer(flex: 3),

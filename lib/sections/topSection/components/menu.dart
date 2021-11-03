@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:web_app/utilities/appScrollController.dart';
 
 import '../../../constants.dart';
 
@@ -12,12 +14,14 @@ class _MenuState extends State<Menu> {
   int hoverIndex = 0;
   List<String> menuItems = [
     "Home",
-    "Abour",
+    "About",
+    "Team",
     "Services",
     "Portfolio",
     "Testimonial",
     "Contact"
   ];
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -44,9 +48,13 @@ class _MenuState extends State<Menu> {
 
   Widget buildMenuItem(int index) => InkWell(
         onTap: () {
+          var appScrollController =
+              Provider.of<AppScrollController>(context, listen: false);
+
           setState(() {
             selectedIndex = index;
           });
+          appScrollController.scroll(context, index);
         },
         onHover: (value) {
           setState(() {

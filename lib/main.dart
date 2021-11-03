@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:web_app/constants.dart';
 import 'package:web_app/home_screen.dart';
+import 'package:provider/provider.dart';
+import 'utilities/appScrollController.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => AppScrollController()),
+      ],
+      child: MyApp(),
+    ));
 }
 
 class MyApp extends StatelessWidget {

@@ -18,7 +18,7 @@ class TopSection extends StatelessWidget {
       decoration: BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: AssetImage("assets/images/background.png"),
+          image: AssetImage("assets/images/background.jpg"),
         ),
       ),
       child: Container(
@@ -27,11 +27,6 @@ class TopSection extends StatelessWidget {
         child: Stack(
           children: [
             LogoAndBlurBox(size: size),
-            Positioned(
-              bottom: 0,
-              right: 0,
-              child: PersonPic(),
-            ),
             Positioned(
               bottom: 0,
               child: Menu(),

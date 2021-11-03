@@ -13,7 +13,7 @@ class AboutTextWithSign extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "About \nmy story",
+          "About \nour story",
           style: Theme.of(context)
               .textTheme
               .headline2
