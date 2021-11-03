@@ -43,7 +43,7 @@ List<Employee> employeeslist2 = [
   ),
   Employee(
     id: 5,
-    name: "Kenneth IT",
+    name: "kennedy waithaka",
     review: review,
     userPic: "assets/images/people.png",
     color: Color(0xFFFFE0E0),
