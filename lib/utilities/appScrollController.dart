@@ -12,12 +12,12 @@ class AppScrollController with ChangeNotifier {
               : i == 2
                   ? MediaQuery.of(context).size.height * 2.15
                   : i == 3
-                      ? MediaQuery.of(context).size.height * 3.79
+                      ? MediaQuery.of(context).size.height * 4.2
                       : i == 4
-                          ? MediaQuery.of(context).size.height * 4.99
+                          ? MediaQuery.of(context).size.height * 5.4
                           : i == 5
-                              ? MediaQuery.of(context).size.height * 6.45
-                              : MediaQuery.of(context).size.height * 7.51,
+                              ? MediaQuery.of(context).size.height * 6.9
+                              : MediaQuery.of(context).size.height * 7.95,
       duration: Duration(seconds: 1),
       curve: Curves.easeInOut,
     );

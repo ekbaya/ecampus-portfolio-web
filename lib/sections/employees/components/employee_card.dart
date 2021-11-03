@@ -32,7 +32,7 @@ class _EmployeeCardState extends State<EmployeeCard> {
         duration: duration,
         margin: EdgeInsets.only(top: kDefaultPadding * 3),
         padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-        height: 350,
+        height: 500,
         width: 350,
         decoration: BoxDecoration(
           color: employeeslist[widget.index].color,
@@ -108,7 +108,7 @@ class _EmployeeCard2State extends State<EmployeeCard2> {
         duration: duration,
         margin: EdgeInsets.only(top: kDefaultPadding * 3),
         padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-        height: 350,
+        height: 500,
         width: 350,
         decoration: BoxDecoration(
           color: employeeslist2[widget.index].color,

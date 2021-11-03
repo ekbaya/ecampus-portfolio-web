@@ -60,19 +60,19 @@ class ContactBox extends StatelessWidget {
               SocalCard(
                 color: Color(0xFFD9FFFC),
                 iconSrc: "assets/images/skype.png",
-                name: 'TheEcampus',
+                name: 'TheKebradcity',
                 press: () {},
               ),
               SocalCard(
                 color: Color(0xFFE4FFC7),
                 iconSrc: "assets/images/whatsapp.png",
-                name: 'TheEcampus',
+                name: 'TheKebradcity',
                 press: () {},
               ),
               SocalCard(
                 color: Color(0xFFE8F0F9),
                 iconSrc: "assets/images/messanger.png",
-                name: 'TheEcampus',
+                name: 'TheKebradcity',
                 press: () {},
               ),
             ],

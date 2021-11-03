@@ -16,7 +16,7 @@ class LogoAndBlurBox extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-            "ECampus",
+            "Kebradcity",
             style: TextStyle(
               fontSize: 80,
               fontWeight: FontWeight.bold,

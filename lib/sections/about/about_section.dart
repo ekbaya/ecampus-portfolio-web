@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:web_app/components/default_button.dart';
 import 'package:web_app/components/my_outline_button.dart';
 import 'package:web_app/constants.dart';
-import 'package:web_app/sections/feedback/feedback_section.dart';
 
 import 'components/about_section_text.dart';
-import 'components/about_text_with_sign.dart';
 import 'components/experience_card.dart';
 
 class AboutSection extends StatelessWidget {
@@ -19,18 +16,24 @@ class AboutSection extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              AboutTextWithSign(),
+              Text(
+                "About \nour story",
+                style: Theme.of(context)
+                    .textTheme
+                    .headline2
+                    .copyWith(fontWeight: FontWeight.bold, color: Colors.black),
+              ),
               Expanded(
                 child: AboutSectionText(
                   text:
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      "Kebrad is a software development and digital transformation consultancy company that provides cutting edge engineering solutions, helping startups, large corporations, and enterprise clients to solve complex issues that always emerge during their digital evolution journey.",
                 ),
               ),
               ExperienceCard(numOfExp: "08"),
               Expanded(
                 child: AboutSectionText(
                   text:
-                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore mag aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      "We build business-changing software that aims to solve problems, not create new ones.  We know that beautiful design and well-written code leads to happier users, more sales and grows your business. Our average site increases sales by 350% and some of our applications are used by millions of people each day.",
                 ),
               ),
             ],
